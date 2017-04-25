@@ -1,0 +1,35 @@
+var Config = (function () {
+	var Config ={};
+	var env = 'local',
+	config = {
+		local: {
+		protocol : 'http',
+		rootApi : 'localhost:8085/api',
+		adminUrl : 'localhost:8081'
+	  },
+	  qa: {
+		protocol : 'https',
+		rootApi : 'glacial-inlet-83305.herokuapp.com/api',
+		adminUrl : 'localhost:8081'
+	  },
+	  uat: {
+		protocol : 'https',
+		rootApi : 'glacial-inlet-83305.herokuapp.com/api',
+		adminUrl : 'localhost:8081'
+	  },
+	live: {
+			protocol: 'https',
+			rootApi: 'glacial-inlet-83305.herokuapp.com/api',
+			adminUrl : 'localhost:8081'
+		  }
+	};
+	Config.getBaseServiceURL=function(webService){
+		return config[env].protocol + '://' + config[env].rootApi + '/' + webService;
+	 };
+	 
+	Config.getParameter = function(key)
+	{
+		return config[env][key];
+	};
+    return Config;
+})();
