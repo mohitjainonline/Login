@@ -1,4 +1,4 @@
-var env = 'local',
+var env = 'qa',
 config = {
 		local: {
 			protocol : 'http',
@@ -6,15 +6,15 @@ config = {
 			},
 		qa: {
 			protocol : 'https',
-			rootApi : 'glacial-inlet-83305.herokuapp.com/api'	
+			rootApi : 'schmgm-nodeservices.herokuapp.com/api'	
 			},
 		uat: {
 			protocol : 'https',
-			rootApi : 'glacial-inlet-83305.herokuapp.com/api'
+			rootApi : 'schmgm-nodeservices.herokuapp.com/api'
 			},
 		live: {
 				protocol: 'https',
-				rootApi: 'glacial-inlet-83305.herokuapp.com/api'
+				rootApi: 'schmgm-nodeservices.herokuapp.com/api'
 			}
 	};
 
