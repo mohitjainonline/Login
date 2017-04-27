@@ -13,7 +13,7 @@ module.exports = {
  devServer: {
       inline: true,
 	    //host: 'localhost',
-      port: process.env.PORT || 8080,//,
+      port: 8080,//,
 	    historyApiFallback: true	  
    },
   module: {
