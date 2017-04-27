@@ -1,6 +1,6 @@
 var Config = (function () {
 	var Config ={};
-	var env = 'local',
+	var env = 'qa',
 	config = {
 		local: {
 		protocol : 'http',
@@ -9,17 +9,17 @@ var Config = (function () {
 	  },
 	  qa: {
 		protocol : 'https',
-		rootApi : 'glacial-inlet-83305.herokuapp.com/api',
+		rootApi : 'schmgm-nodeservices.herokuapp.com/api',
 		adminUrl : 'localhost:8081'
 	  },
 	  uat: {
 		protocol : 'https',
-		rootApi : 'glacial-inlet-83305.herokuapp.com/api',
+		rootApi : 'schmgm-nodeservices.herokuapp.com/api',
 		adminUrl : 'localhost:8081'
 	  },
 	live: {
 			protocol: 'https',
-			rootApi: 'glacial-inlet-83305.herokuapp.com/api',
+			rootApi: 'schmgm-nodeservices.herokuapp.com/api',
 			adminUrl : 'localhost:8081'
 		  }
 	};
