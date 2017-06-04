@@ -1,21 +1,25 @@
-var env = 'qa',
+var env = 'local',
 config = {
 		local: {
-			protocol : 'http',
-			rootApi : 'localhost:8085/api'
-			},
-		qa: {
-			protocol : 'https',
-			rootApi : 'schmgm-nodeservices.herokuapp.com/api'	
-			},
-		uat: {
-			protocol : 'https',
-			rootApi : 'schmgm-nodeservices.herokuapp.com/api'
-			},
-		live: {
-				protocol: 'https',
-				rootApi: 'schmgm-nodeservices.herokuapp.com/api'
-			}
+		protocol : 'http',
+		rootApi : 'localhost:8085/api',
+		adminUrl : 'http://localhost:8081'
+	  },
+	  qa: {
+		protocol : 'https',
+		rootApi : 'schmgm-nodeservices.herokuapp.com/api',
+		adminUrl : 'http://localhost:8081'
+	  },
+	  uat: {
+		protocol : 'https',
+		rootApi : 'schmgm-nodeservices.herokuapp.com/api',
+		adminUrl : 'http://localhost:8081'
+	  },
+	live: {
+			protocol: 'https',
+			rootApi: 'schmgm-nodeservices.herokuapp.com/api',
+			adminUrl : 'http://localhost:8081'
+		  }
 	};
 
 module.exports = {

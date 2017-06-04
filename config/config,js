@@ -5,22 +5,22 @@ var Config = (function () {
 		local: {
 		protocol : 'http',
 		rootApi : 'localhost:8085/api',
-		adminUrl : 'localhost:8081'
+		adminUrl : 'http://localhost:8081'
 	  },
 	  qa: {
 		protocol : 'https',
 		rootApi : 'schmgm-nodeservices.herokuapp.com/api',
-		adminUrl : 'localhost:8081'
+		adminUrl : 'http://localhost:8081'
 	  },
 	  uat: {
 		protocol : 'https',
 		rootApi : 'schmgm-nodeservices.herokuapp.com/api',
-		adminUrl : 'localhost:8081'
+		adminUrl : 'http://localhost:8081'
 	  },
 	live: {
 			protocol: 'https',
 			rootApi: 'schmgm-nodeservices.herokuapp.com/api',
-			adminUrl : 'localhost:8081'
+			adminUrl : 'http://localhost:8081'
 		  }
 	};
 	Config.getBaseServiceURL=function(webService){
